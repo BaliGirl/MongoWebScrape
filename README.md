@@ -26,5 +26,7 @@ The above command will start the server for you
 > Open your browser to http://localhost:3000/
 
 If you see "App listening on PORT 3000" in your CLI, then you're good to go :thumbsup:!
+
+<br/>
 <br/>
 Happy Contributing! ENJOY!!
