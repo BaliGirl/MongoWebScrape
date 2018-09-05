@@ -28,5 +28,5 @@ The above command will start the server for you
 If you see "App listening on PORT 3000" in your CLI, then you're good to go :thumbsup:!
 
 <br/>
-<br/>
+
 Happy Contributing! ENJOY!!
