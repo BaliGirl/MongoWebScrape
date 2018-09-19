@@ -39,7 +39,7 @@ app.set("view engine", "handlebars");
 
 // Database configuration with mongoose
 
-var databaseUri = "mongodb://localhost/mongoHeadlines";
+var databaseUri = "mongodb://localhost/nhlscrape";
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
 } else {
@@ -74,10 +74,10 @@ app.get("/", function (req, res) {
     });
 });
 
-// A GET request to scrape the usopen/tennis website
+// A GET request to scrape the nhl/oilers website
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with request
-  request("https://www.usopen.org/", function(error, response, html) {
+  request("https://www.nhl.com/oilers/", function(error, response, html) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
     var $ = cheerio.load(html);
     // Now, we grab every h2 within an article tag, and do the following:
